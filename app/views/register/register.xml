@@ -1,0 +1,54 @@
+<Page loaded='pageLoaded'>
+    <StackLayout>
+        <Label id='lab' text='ลงทะเบียนผู้เข้ารับการฝึกอบรม'/>
+        <Label id='lab' text='เลขบัตรประชาชน'/>
+        <TextField
+            hint="เลขบัตรประชาชน" 
+            keyboardType="number" 
+            autocorrect="false" 
+            autocapitalizationType="none"
+            secure="false"
+            text="{{pcode}}"
+        />
+        <Label id='lab' text='ชื่อ-สกุล'/>
+        <TextField
+            hint="ชื่อ-นามสกุล" 
+            keyboardType="email" 
+            autocorrect="false" 
+            autocapitalizationType="none"
+            secure="false"
+            text="{{pname}}"
+        />
+        <Label id='lab' text='สถานศึกษา'/>
+        <TextField
+            hint="สถานศึกษา" 
+            secure="false"
+            text="{{school}}"
+        />
+        <Label id='lab' text='ชื่อผู้ใช้'/>
+        <TextField
+            hint="ชื่อผู้ใช้" 
+            secure="false"
+            text="{{username}}"
+        />
+        <Label id='lab' text='รหัสผ่าน'/>
+        <TextField
+            hint="รหัสผ่าน" 
+            secure="true"
+            text="{{password}}"
+        />
+        <Button 
+            id="btn" 
+            text="ถ่ายรูป" 
+            class="takePicture" 
+            tap="takePicture"
+        />
+        <Button 
+            id="btn" 
+            text="บันทึก" 
+            class="save" 
+            tap="saveData"
+        />
+        <Image id='photo'/>
+    </StackLayout>
+</Page>

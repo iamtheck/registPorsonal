@@ -1,0 +1,13 @@
+#lab{
+    font-size: 16px;
+    color: royalblue;
+}
+#btn{
+    background-color: sandybrown;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#photo{
+    width: 150px;
+    height:150px;
+}

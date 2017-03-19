@@ -1,0 +1,31 @@
+<Page loaded='pageLoaded'>
+    <StackLayout>
+        <Label text='ลงชื่อเข้าใช้งานระบบ'/>
+        <TextField 
+            class="username" 
+            id="email" 
+            hint="Email Address" 
+            keyboardType="email" 
+            autocorrect="false" 
+            autocapitalizationType="none"
+            text="{{username}}"
+             />
+        <TextField 
+            keyboardType="Password"
+            id="pass" 
+            hint="Password" 
+            secure="true"
+            text="{{password}}"
+        />
+        <Button 
+            id="Login" 
+            text="เข้าใช้งาน" 
+            class="Login" 
+            tap="checkLogin"
+        />
+        <Button 
+            text="สมัครสมาชิก" 
+            tap="goToRegis"
+        />
+    </StackLayout>
+</Page>
